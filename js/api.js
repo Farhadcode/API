@@ -22,17 +22,24 @@ postUpLoad = (posts) => {
     for (const post of posts) {
         console.log(post);
         const div = document.createElement('div');
-        const h1 = document.createElement('h1');
-        const p = document.createElement('p');
+        // 1st system
 
-        h1.innerText = `Title :${post.title}`;
-        p.innerText = `Post : ${post.body}`;
+        // const h1 = document.createElement('h1');
+        // const p = document.createElement('p');
+        // h1.innerText = `Title :${post.title}`;
+        // p.innerText = `Post : ${post.body}`;
+
+        // 2nd system
+
+        div.innerHTML = `
+        <h1>${post.title} </h1>
+        <p>${post.body}</p>
+        `
 
         div.classList.add("card", "bg-secondary", "text-white", "p-5", "border", "my-3");
         section.appendChild(div);
-
-        div.appendChild(h1);
-        div.appendChild(p);
+        // div.appendChild(h1);
+        // div.appendChild(p);
 
     }
 }
