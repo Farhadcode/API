@@ -1,0 +1,22 @@
+#countre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.countre-style {
+  border: 2px solid tomato;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#country-details {
+  height: 300px;
+  width: 250px;
+  background-color: rgba(46, 45, 45, 0.418);
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid rgb(199, 29, 230);
+  border-radius: 8px;
+}
